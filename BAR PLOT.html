@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR PLOT</title>
+
+    <style>
+        /* styles to bargraph*/
+        #bargraph {
+            background-color: rgb(239, 239, 239);
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+
+        /* article styles */
+        #bargraph article {
+            display: inline-block;
+        }
+
+        /* paragraph styles */
+        p {
+            padding-left: 20px;
+            color: black;
+        }
+
+        /* div styles */
+        div {
+            height: 300px;
+            width: 40px;
+            margin: 20px;
+            background-color: rgb(166, 166, 166);
+        }
+
+        /* bar 1 styles with keyframes for animation*/
+        #bar1 {
+            width: 100%;
+            height: 70%;
+            background-color: rgb(255, 255, 255);
+            animation-name: barplot1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes barplot1 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 70%;
+                background-color: white;
+            }
+        }
+
+        /* bar 2 styles with keyframes for animation*/
+        #bar2 {
+            width: 100%;
+            height: 60%;
+            background-color: white;
+            animation-name: barplot2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes barplot2 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 60%;
+                background-color: white;
+            }
+        }
+
+        /* bar 3 styles with keyframes for animation*/
+        #bar3 {
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            animation-name: barplot3;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes barplot3 {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 20%;
+                background-color: white;
+            }
+        }
+
+        /* h1 bottom barplot styles*/
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="bargraph">
+        <article>
+            <div>
+                <article id="bar1">
+                </article>
+            </div>
+            <p>
+                30%
+            </p>
+        </article>
+        <article>
+            <div>
+                <article id="bar2">
+                </article>
+            </div>
+            <p>
+                40%
+            </p>
+        </article>
+        <article>
+            <div>
+                <article id="bar3">
+                </article>
+            </div>
+            <p>
+                80%
+            </p>
+        </article>
+
+        <h1 style="text-align:center;">BAR PLOT</h1>
+
+    </section>
+
+</body>
+
+</html>
